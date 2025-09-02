@@ -1,0 +1,30 @@
+/* Reset and base styles */
+* { margin:0; padding:0; box-sizing:border-box; font-family: Arial, sans-serif; }
+body { background-color: #d3d3d3; color: #000; line-height: 1.6; }
+a { text-decoration: none; color: #6a0dad; font-weight: bold; }
+header, nav, footer { padding: 20px; text-align: center; }
+/* Navigation */
+nav { background-color: #000; }
+nav a { margin: 0 15px; color: #fff; font-weight: bold; }
+nav a:hover { color: #6a0dad; }
+/* Page titles */
+h1, h2, h3 { color: #6a0dad; font-weight: bold; margin-bottom: 15px; }
+/* Sections */
+section { padding: 50px 20px; }
+.section-dark { background-color: #000; color: #d3d3d3; }
+/* Images grid */
+.image-grid { display: flex; flex-wrap: wrap; gap: 20px; justify-content: center; }
+.image-grid img { width: 250px; height: auto; border-radius: 15px; transform: rotate(-3deg); transition: transform 0.3s; }
+.image-grid img:hover { transform: scale(1.05) rotate(0deg); }
+/* Download button */
+.download-btn { display: inline-block; padding: 20px 40px; background-color:#6a0dad; color: #fff; font-size:1.2em; border-radius: 15px; margin-top:20px; transition: 0.3s; }
+.download-btn:hover { background-color: #8a2be2; transform: scale(1.05); }
+/* Forms */
+form { max-width: 500px; margin: auto; display: flex; flex-direction: column; gap: 15px; }
+input, textarea { padding: 10px; border-radius: 10px; border:1px solid #000; }
+button { padding: 15px; border:none; border-radius: 10px; background-color:#6a0dad; color:#fff; font-weight:bold; cursor:pointer; transition:0.3s; }
+button:hover { background-color:#8a2be2; }
+/* Footer */
+footer { background-color:#000; color:#fff; padding: 20px; text-align:center; margin-top:50px; }
+/* Responsive */
+@media(max-width:768px){ .image-grid img{width:150px;} nav a{margin:0 8px;} }
